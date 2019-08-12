@@ -1,0 +1,45 @@
+#!/usr/bin/env python3
+# coding: utf-8
+
+import os
+import argparse
+from time import sleep
+from datetime import datetime
+
+parser = argparse.ArgumentParser(description='Types a string every 5 minutes.')
+parser.add_argument('text', type=str, help='Text you wish the typerv2.1 to input.')
+
+args = parser.parse_args()
+
+PRE_WAIT = 3
+ 
+REPEAT = 1000
+WAIT = 310
+ 
+def my_type(text):
+    for c in text:
+        if c == " ":
+            key = "KP_Space"
+        elif c == "\n":
+            key = "KP_Enter"
+        else:
+            key = c
+        #
+        cmd = "xdotool key {}".format(key)
+        sleep(0.2)
+        os.system(cmd)
+ 
+def main():
+    print("You have {} seconds to switch to the application...".format(PRE_WAIT))
+    sleep(PRE_WAIT)
+    #
+    for i in range(1, REPEAT+1):
+        text = "{}\n".format(args.text)
+        my_type(text)
+        print("#{} at {} hours - ".format(i, datetime.now().strftime("%H:%M:%S")), text)
+        sleep(WAIT)
+ 
+##############################################################################
+ 
+if __name__ == "__main__":
+    main()
