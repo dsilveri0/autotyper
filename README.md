@@ -12,6 +12,6 @@ To run the program use the following syntax:
 
 	autotyper "text you want to type"
 
-You can also run the following command to get a help: 
+You can also run the following command to get help: 
 	
 	autotyper --help
