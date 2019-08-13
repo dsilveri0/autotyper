@@ -1,5 +1,5 @@
 # autotyper
-This script allows auto typing text to other programs that don't allow the usage of copy paste.
+This script allows auto typing on programs that don't allow the usage of copy paste.
 
 In order to use this script, it is necessary to have installed:
 
