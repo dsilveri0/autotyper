@@ -10,7 +10,7 @@ If using ubuntu, put the file under the /bin folder on the home directory and gr
 
 To run the script use the following syntax:
 
-	autotyper [-h] "text you want to type" < Number of times the script will type the text > < Interval in seconds between each repetition >
+	autotyper [-h] "text you want to type" <Number of repetitions> <Interval (s) between repetitions>
 
 You can also run the following command to get help:
 
