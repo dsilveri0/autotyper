@@ -8,9 +8,9 @@ In order to use this script, it is necessary to have installed:
 
 If using ubuntu, put the file under the /bin folder on the home directory and grant it execution permission.
 
-To run the script use the following syntax: (Second argument is the number of repetitions. Third argument is the interval in seconds between each repetition.)
+To run the script use the following syntax:
 
-	autotyper [-h] "text you want to type" 5 2
+	autotyper [-h] "text you want to type" < Number of times the script will type the text > < Interval in seconds between each repetition >
 
 You can also run the following command to get help:
 
