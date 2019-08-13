@@ -4,7 +4,7 @@ This script allows auto typing on programs that don't allow the usage of copy pa
 In order to use this script, it is necessary to have installed:
 
 - Python3
-- xdotools
+- xdotool
 
 If using ubuntu, put the file under the /bin folder on the home directory and grant it execution permission.
 
