@@ -6,16 +6,18 @@ import argparse
 from time import sleep
 from datetime import datetime
 
-parser = argparse.ArgumentParser(description='Types a string every 5 minutes.')
-parser.add_argument('text', type=str, help='Text you wish the typerv2.1 to input.')
+parser = argparse.ArgumentParser(description='Types a string multiple times on a specified interval of time given by the user.')
+parser.add_argument('text', type=str, help='Text you wish the autotyper to input.')
+parser.add_argument('number', type=int, help='Number of times you want to type the text.')
+parser.add_argument('time', type=int, help='Interval of time in between each repetition.')
 
 args = parser.parse_args()
 
 PRE_WAIT = 3
- 
-REPEAT = 1000
-WAIT = 310
- 
+
+REPEAT = args.number
+WAIT = args.time
+
 def my_type(text):
     for c in text:
         if c == " ":
@@ -28,18 +30,18 @@ def my_type(text):
         cmd = "xdotool key {}".format(key)
         sleep(0.2)
         os.system(cmd)
- 
+
 def main():
     print("You have {} seconds to switch to the application...".format(PRE_WAIT))
     sleep(PRE_WAIT)
     #
     for i in range(1, REPEAT+1):
         text = "{}\n".format(args.text)
-        my_type(text)
         print("#{} at {} hours - ".format(i, datetime.now().strftime("%H:%M:%S")), text)
+        my_type(text)
         sleep(WAIT)
- 
+
 ##############################################################################
- 
+
 if __name__ == "__main__":
     main()

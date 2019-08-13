@@ -1,6 +1,5 @@
 # autotyper
 This script allows auto typing text to other programs that don't allow the usage of copy paste.
-(This script types the string 100 times, with a 310 seconds interval in beetween, after each time it types the Return key.)
 
 In order to use this script, it is necessary to have installed:
 
@@ -9,10 +8,10 @@ In order to use this script, it is necessary to have installed:
 
 If using ubuntu, put the file under the /bin folder on the home directory and grant it execution permission.
 
-To run the script use the following syntax:
+To run the script use the following syntax: (Second argument is the number of repetitions. Third argument is the interval in seconds between each repetition.)
 
-	autotyper "text you want to type"
+	autotyper [-h] "text you want to type" 5 2
 
-You can also run the following command to get help: 
-	
-	autotyper --help
+You can also run the following command to get help:
+
+	autotyper -h OR --help
