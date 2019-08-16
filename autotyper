@@ -28,7 +28,7 @@ def my_type(text):
             key = c
         #
         cmd = "xdotool key {}".format(key)
-        sleep(0.2)
+        sleep(0.5)
         os.system(cmd)
 
 def main():
