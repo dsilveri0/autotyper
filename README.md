@@ -1,5 +1,5 @@
 # autotyper
-This script autotypes phrases, letter by letter, at a set intervel and number of repetitions.
+This script autotypes phrases, letter by letter, at a set interval and number of repetitions.
 
 In order to use this script, it is necessary to have installed:
 
@@ -16,4 +16,4 @@ You can also run the following command to get help:
 
 For this program to run, you need to grant it execution permissions.
 
-You don't want to type python3 everytime you want to run the script, there's ways to make your system recognize the script as a system command thus allowing you to run it without "python3" before it.
+If you don't want to type python3 everytime you want to run the script, there's methods to make your system recognize the script as a system command thus allowing you to run it without "python3" before it.
